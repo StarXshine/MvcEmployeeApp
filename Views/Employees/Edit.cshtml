@@ -1,0 +1,33 @@
+﻿@model WebApplication2.Models.UpdateEmployeeViewModel
+  
+@{
+}
+<h2>Edit Employee</h2>
+<form method="post">
+	<input type="hidden"asp-for="Id"/>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email Address</label>
+        <input asp-for="Email" class="form-control" />
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Date Of Birth</label>
+        <input asp-for="DateOfBirth" class="form-control" />
+
+    </div>
+
+
+    <div class="mb-3">
+        <label for="" class="form-label">Department</label>
+        <input asp-for="Department" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Update</button>
+    <a href="/Employees/Index" class="btn btn-secondary">Cancel</a>
+</form>
+
